@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <input type="number" value="Number" id="inputvalue" onfocus="this.style.color='green'"
+            onblur="this.style.color='yellow'">
+        <select id="temp">
+            <option value="Select Value" disabled>SelectValue</option>
+            <option value="Centigrade">Centigrade</option>
+            <option value="Farenhiet">Farenhiet</option>
+        </select>
+
+        <input type="submit" onclick="temperatureConversion()">
+        <input type="text" id="output">
+    </form>
+</body>
+<script>
+    //   function faren()
+    //   {
+    //     var getcentigrade=document.GetElementById=('temp.Centigrade'); 
+    //   var getfarenhiet=document.GetElementById=('temp.Farenhiet'); 
+    //   var input=document.getElementById('numb').value; 
+    //   output1= (input*9/5)+32;
+    //   var output2=(input-32)*5/9;
+
+    //   alert('Tempreture is' + '' +  output1 )
+    // var drpdown=document.getElementById('temp')
+    // var output=document.getElementById('output')
+
+    function temperatureConversion() {
+
+        var option = document.getElementById('temp').value
+        var val = parseFloat(inputvalue.value);
+        switch (temp.selectedIndex) {
+            case 0:
+                result["Celsius"] = val;
+                break;
+            case 1:
+
+                result["Celsius"] = (val - 32) * 5 / 9;
+                break;
+            default:
+                break;
+        }
+
+    }
+</script>
+
+</html>
